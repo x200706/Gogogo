@@ -1,9 +1,11 @@
 package main
 
 import (
-	"fmt"
+	// "fmt"
+	"log"
 )
 
 func main() {
-	fmt.Println("Hello, World!")
+	// fmt.Println("Hello, World!")
+	log.Println("Hello, World!") // 自帶時間戳
 }
