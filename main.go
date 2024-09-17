@@ -1,8 +1,12 @@
 package main
 
-import 	"github.com/gin-gonic/gin"
-// import 	"net/http" // 沒用到的也不能引用，不會過編譯 
-// import 	"log"
+import (
+	// "fmt"
+    "github.com/gin-gonic/gin"
+    // "net/http"
+    // "log"
+)
+// import somthing // 沒用到的也不能引用，不會過編譯 
 
 func main() {
     r := gin.Default()
@@ -10,7 +14,7 @@ func main() {
             c.JSON(200, gin.H{
             "message": "Hello World",
             })
-    
+    })
     r.Run() // listen and serve on 0.0.0.0:8080
 }
 
